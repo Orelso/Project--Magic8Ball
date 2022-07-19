@@ -8,9 +8,17 @@ body {
 display: flex;
 justify-content: center;
 align-items: center;
-min-height: 100vh;
 background-color: #141E30;
 background: linear-gradient(to right, #24243e, #141E30, #0f0c29); }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
 
 h1 {
 text-transform: Uppercase;
@@ -18,15 +26,22 @@ margin-bottom: .5em;
 font-family: 'Rubik', sans-serif;
 font-size: 60px;
 color: mediumorchid; 
-margin-left: 40px;
 }
 
+p {
+  font-size: 12px;
+  color: purple;
+  font-family: "Copperplate";
+  color:  white;
+}
 
 #blackcircle {
 background-color: black;
 color:white;
-width: 500px;
-height: 500px;
+width: 90vw; 
+height: 90vw;
+max-width: 500px;
+max-height: 500px;
 border-radius: 50%; 
 text-align:center;
 margin: 0 auto;
@@ -38,8 +53,8 @@ align-items: center;
 position: relative;
 background-color: mediumorchid;
 color: black;
-width: 270px;
-height: 270px; 
+width: 60%;
+height: 60%; 
 border-radius: 50%;
 margin: 0 auto;
 } 
@@ -62,10 +77,8 @@ cursor: pointer;
 display: block;
 font-weight: 600;
 font-size: 18px;
-padding: 0 18px;
+padding: 18px 18px;
 margin-bottom: 10px;
-margin-left: 65px;
-line-height: 50px;
 text-align: center;
 touch-action: manipulation;
 }
@@ -79,37 +92,5 @@ button:active {
   transform: translate(2px, 2px);
 }
 
-@media (max-width: 550px) {
-  button {
-    width: 250px;
-    margin: auto;
-    height: auto;
-    font-size: 10px;
-  }
-  #blackcircle{
-    width: 450;
-    margin: auto;
-    height: 450;
-
-  }
-  #purplecircle {
-    width: 250;
-    margin: auto;
-    height: 250;
-  }
-
-  #eightBall{
-    font-size: 15px;
-  }
-}
-
-
-p {
-    font-size: 8px;
-    margin: -6.1%;
-    color: purple;
-    font-family: "Copperplate";
-
-}
 
 
